@@ -6,7 +6,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #f27c6a;
-    color: white;
+    color: black;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -27,7 +27,7 @@
     border: none;
     outline: none;
     background-color: transparent;
-    color: white;
+    color: black;
     font-size: 36px;
     font: inherit;
     text-align: center;
@@ -64,7 +64,7 @@
 .SurveyNav {
     z-index: 100;
     position: absolute;
-    color: white;
+    color: black;
     font-size: 18px;
     transition: transform .35s;
 }

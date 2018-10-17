@@ -56,7 +56,7 @@ h1 {
 @media (min-width: 768px) {
     input[type="submit"].CreateButton,
     h1 {
-        font-size: 64px;
+        font-size: 80px;
     }
 }
 
