@@ -1,0 +1,100 @@
+.SurveyDataSection {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f27c6a;
+    color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.SurveyDataSection label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.SurveyDataSection input,
+.SurveyDataSection textarea {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 36px;
+    font: inherit;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.SurveyDataSection input[type="text"],
+.SurveyDataSection input[type="number"],
+.SurveyDataSection textarea
+{
+    font-size: 18px;
+}
+
+.SurveyDataSection textarea {
+    height: 100px;
+    resize: none;
+}
+
+.SurveyDataSection input[type=number]::-webkit-inner-spin-button, 
+.SurveyDataSection input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.SurveyDataSection input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.SurveyNav:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.SurveyNav {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    transition: transform .35s;
+}
+
+.SurveyStart {
+    width: 300px;
+    left: calc(50% - 150px);
+    bottom: 80px;
+    text-align: center;
+}
+
+.SurveyUp {
+    top: 20px;
+    right: 20px;
+}
+
+.SurveyDown {
+    bottom: 20px;
+    right: 20px;
+}
+
+@media (min-width: 768px) {
+    .SurveyNav {
+        font-size: 24px;
+    }
+
+    .SurveyDataSection input[type="text"],
+    .SurveyDataSection input[type="number"],
+    .SurveyDataSection textarea
+    {
+        font-size: 36px;
+    }
+}

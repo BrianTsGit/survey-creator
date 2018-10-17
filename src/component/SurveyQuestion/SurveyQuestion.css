@@ -1,0 +1,139 @@
+.SurveyQuestion {
+    position: relative;
+    padding: 100px 30px;
+}
+
+.SurveyQuestion .QuestionLabel {
+    margin: 20px 0 20px;
+    font-size: 18px;
+}
+
+ul.QuestionTypes  {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.QuestionTypes li {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+ul.QuestionTypes li input[type=radio] {
+    width: 20px;
+    margin: 10px auto 0;
+}
+
+.AnswerSection {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.AnswerChoices {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 18vh;
+    overflow: scroll;
+}
+
+.AnswerChoice {
+    width: 100%;
+}
+
+.AnswerChoices .AnswerChoice input[type="text"] {
+    display: inline-block;
+    width: 90%;
+    font-size: 12px;
+    text-align: left;
+}
+
+.AnswerChoice button:hover {
+    cursor: pointer;
+}
+
+.AnswerChoice button {
+    display: inline-block;
+    width: 5%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    text-align: right;
+}
+
+.AddAnswerButton:hover {
+    cursor: pointer;
+}
+
+.AddAnswerButton {
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.QuestionActionButton {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 2px 5px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.QuestionActionButton:hover {
+    cursor: pointer;
+}
+
+.AddQuestionButton {
+    width: 250px;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 125px);
+    font-size: 28px;
+    margin: 0;
+}
+
+h3 {
+    margin: 0 0 40px 0;
+    text-align: center;
+    font-size: 36px;
+}
+
+.SurveyQuestion button {
+    font: inherit;
+}
+
+@media (min-width: 768px) {
+    .SurveyQuestion .QuestionLabel {
+        font-size: 22px;
+    }
+
+    .AnswerSection {
+        width: 60%;
+    }
+
+    .AnswerChoices .AnswerChoice input[type="text"] {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    ul.QuestionTypes li {
+        width: 10%;
+        font-size: 18px;
+    }
+}
