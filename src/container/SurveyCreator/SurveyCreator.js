@@ -67,8 +67,6 @@ class SurveyCreator extends Component {
     }
 
     handleQuestionChange = (questionIndex = null, dataType = null, value = null) => {
-        //NOTE handle erasing answers when changing question type to "text" to fulfill requirements
-
         let updatedSurvey = {...this.state.survey};
         let updatedQuestions = [...updatedSurvey.questions];
 
@@ -148,9 +146,6 @@ class SurveyCreator extends Component {
     }
 
     render () {
-
-        //define surveyContent style here with translateY prop
-        //scary stuff here!
         let surveyContentStyle = {
             transform: 'translateY(calc(-100vh*' + this.state.survey.location + ')'
         };
