@@ -7,7 +7,6 @@ import SurveyDataSection from '../../component/SurveyDataSection/SurveyDataSecti
 class SurveyCreator extends Component {
     state = {
         survey: {
-            location: 0,
             title: '',
             description: '',
             pointTotal: 0,
@@ -33,16 +32,17 @@ class SurveyCreator extends Component {
                 message: ''
             },
         },
+        slideLocation: 0
     };
 
     handleSurveyScroll = (up = false) => {
         this.setState((prevState, props) => {
-            let updatedSurvey = {...prevState.survey};
+            let updatedSlideLocation = prevState.slideLocation;
             if (up)
-                updatedSurvey.location--;
+                updatedSlideLocation--;
             else
-                updatedSurvey.location++;
-            return { survey: updatedSurvey };
+                updatedSlideLocation++;
+            return { slideLocation: updatedSlideLocation };
         });
     }
 
@@ -147,7 +147,7 @@ class SurveyCreator extends Component {
 
     render () {
         let surveyContentStyle = {
-            transform: 'translateY(calc(-100vh*' + this.state.survey.location + ')'
+            transform: 'translateY(calc(-100vh*' + this.state.slideLocation + ')'
         };
 
         let questions = this.state.survey.questions.map((q, index, array) => {
